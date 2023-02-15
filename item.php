@@ -69,7 +69,7 @@ if(isset($_GET['product_id'])){
           <span class="font-normal tracking-wide">Details</span>
         </a>
 
-        <?php if($product_review == "ON"){ ?>
+        <?php if($review_product == "checked"){ ?>
         <a href="#" data-item="item_reviews" class="item_content_toggler flex items-center gap-x-2 px-6 py-3">
           <span class="font-normal tracking-wide">Reviews</span>
           <p class="relative text-sm h-fit w-fit flex items-center justify-center text-gray-200">
@@ -131,6 +131,7 @@ if(isset($_GET['product_id'])){
                 </a>
 
 
+                <?php if($share_product == "checked"){ ?>
                 <div class="flex gap-x-0.5 flex-wrap">
                   <a href=""
                     class=" block px-3 py-2 rounded-l bg-gray-500 hover:bg-gray-500 focus:ring-2 focus:ring-gray-300 focus:ring-offset-1 w-fit text-white tracking-wide space-x-1">
@@ -148,6 +149,9 @@ if(isset($_GET['product_id'])){
                       class="fa-brands fa-youtube"></i>
                   </a>
                 </div>
+                <?php }?>
+
+
               </div>
             </div>
 
@@ -157,7 +161,7 @@ if(isset($_GET['product_id'])){
           </div>
 
           <!-- Item Reviews -->
-          <?php if($product_review == "ON"){ ?>
+          <?php if($review_product == 'checked'){ ?>
           <div data-item="item_reviews" class="item_content hidden">
             <div class="flex justify-between items-center">
               <h3 class="flex items-center gap-x-3 text-xl font-medium"> <span><?php echo $data['review']?> Reviews</span>
@@ -415,6 +419,7 @@ if(isset($_GET['product_id'])){
 
             <br>
 
+            <?php if($related_product == "checked"){ ?>
             <div>
               <h3 class="bg-green-600 text-white p-3 rounded-t">Recommended Products</h3>
               <div class="bg-[#f3f3f3]">
@@ -432,9 +437,9 @@ if(isset($_GET['product_id'])){
                   <!-- <p class="text-gray-500 py-5 border-b">Lorem ipsum dolor sit amet consectetur.</p> -->
                 </a>
                 <?php }?>
-
               </div>
             </div>
+            <?php }?>
 
           </div>
         </div>
