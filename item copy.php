@@ -108,6 +108,7 @@ if(isset($_GET['product_id'])){
 
         <!-- Theme Content -->
         <div class="w-full pt-12">
+
           <!-- Item Details -->
           <div data-item="item_details" class="item_content w-full space-y-6">
             <!-- Theme Thumbnail -->
@@ -234,7 +235,27 @@ if(isset($_GET['product_id'])){
                   vitae. Quasi, voluptates!</p>
               </div>
 
-            
+<!-- ---------------reveiw----system----------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------------reveiw----system----------------------- -->              
             </div>
           </div>
          <?php }?>
@@ -249,10 +270,10 @@ if(isset($_GET['product_id'])){
               </h3>
             </div>
             <div class="pt-6 space-y-3">
-
-              <div class="border rounded overflow-hidden">                   
+              <div class="border rounded overflow-hidden">
+                   
               <?php $comments = _get("comment","post_id=$product_id AND type='product' ORDER BY id DESC LIMIT 10");
-                while($comment = mysqli_fetch_assoc($comments)){ ?>
+                while($comment = mysqli_fetch_assoc($comments)){ ?> 
                   <div class="p-4 border-b bg-gray-50">
                     <div class="overflow-hidden flex items-center justify-between">
                       <a href="#!" class="flex items-center gap-x-3 text-blue-500 font-medium">
@@ -265,6 +286,7 @@ if(isset($_GET['product_id'])){
                     <p class="mt-3"><?php echo $comment['content']?></p>
                   </div>
               <?PHP }?>
+
               </div>
 
               <?php                 
@@ -316,11 +338,6 @@ if(isset($_GET['product_id'])){
           <!-- Item Comments -->
 
         </div>
-
-
-
-
-        
         <!-- RightBar Info -->
         <div class="w-full lg:min-w-[350px] lg:w-[350px]">
 
