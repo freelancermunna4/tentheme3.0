@@ -1,8 +1,6 @@
 <?php include("common/header-sidebar.php")?>
       
-        <?php
-        $data = _fetch("website","id=1");
-        ?>
+        <?php $data = _fetch("website","id=1"); ?>
         <div class="w-full space-y-10 p-6 lg:p-12 bg-white border border-gray-200 rounded">
 
 
@@ -58,23 +56,23 @@
             <form action="" method="POST" class="grid grid-cols-2 gap-y-6 gap-x-12">
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f1_link_title1">Link Title 1</label>
+              <input name="f1_link_title1" class="input" type="text" id="f1_link_title1" placeholder="Link Title 1" required value="<?php echo $data['f1_link_title1']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f1_link_url1">Link Url 1</label>
+              <input name="f1_link_url1" class="input" type="text" id="f1_link_url1" placeholder="Link Url 1" required value="<?php echo $data['f1_link_url1']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f1_link_title2">Link Title 2</label>
+              <input name="f1_link_title2" class="input" type="text" id="f1_link_title2" placeholder="Link Title 2" required value="<?php echo $data['f1_link_title2']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f1_link_url2">Link Url 2</label>
+              <input name="f1_link_url2" class="input" type="text" id="f1_link_url2" placeholder="Link Url 2" required value="<?php echo $data['f1_link_url2']?>">
             </div>
 
             <div class="col-span-2 flex justify-start">
@@ -95,8 +93,8 @@
             </div>
 
             <div style="padding:50px 10px">
-              <label for="footer_text">Footer Text</label>
-              <textarea style="padding:10px;border:2px solid gray;width:100%;height:200px;border-radius:5px;" name="" class="textarea" id=""></textarea>
+              <label for="f2_textarea">Footer Text</label>
+              <textarea style="padding:10px;border:2px solid gray;width:100%;height:200px;border-radius:5px;" name="f2_textarea" class="textarea" id=""></textarea>
             </div>
 
             <div class="col-span-2 flex justify-start">
@@ -114,45 +112,48 @@
               <h2 class="text-xl font-semibold text-cyan-800">Footer 3</h2>
             </div>
 
+
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f3_link_title1">Link Title 1</label>
+              <input name="f3_link_title1" class="input" type="text" id="f3_link_title1" placeholder="Link Title 1" required value="<?php echo $data['f3_link_title1']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f3_link_url1">Link Url 1</label>
+              <input name="f3_link_url1" class="input" type="text" id="f3_link_url1" placeholder="Link Url 1" required value="<?php echo $data['f3_link_url1']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f3_link_title2">Link Title 2</label>
+              <input name="f3_link_title2" class="input" type="text" id="f3_link_title2" placeholder="Link Title 2" required value="<?php echo $data['f3_link_title2']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f3_link_url2">Link Url 2</label>
+              <input name="f3_link_url2" class="input" type="text" id="f3_link_url2" placeholder="Link Url 2" required value="<?php echo $data['f3_link_url2']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f3_link_title3">Link Title 3</label>
+              <input name="f3_link_title3" class="input" type="text" id="f3_link_title3" placeholder="Link Title 3" required value="<?php echo $data['f3_link_title3']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f3_link_url3">Link Url 3</label>
+              <input name="f3_link_url3" class="input" type="text" id="f3_link_url3" placeholder="Link Url 3" required value="<?php echo $data['f3_link_url3']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f3_link_title4">Link Title 4</label>
+              <input name="f3_link_title4" class="input" type="text" id="f3_link_title4" placeholder="Link Title 4" required value="<?php echo $data['f4_link_title2']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f3_link_url4">Link Url 4</label>
+              <input name="f3_link_url4" class="input" type="text" id="f3_link_url4" placeholder="Link Url 4" required value="<?php echo $data['f4_link_url2']?>">
             </div>
+
+
 
             <div class="col-span-2 flex justify-start">
               <div class="w-fit">
@@ -172,43 +173,43 @@
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f4_link_title1">Link Title 1</label>
+              <input name="f4_link_title1" class="input" type="text" id="f4_link_title1" placeholder="Link Title 1" required value="<?php echo $data['f4_link_title1']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f4_link_url1">Link Url 1</label>
+              <input name="f4_link_url1" class="input" type="text" id="f4_link_url1" placeholder="Link Url 1" required value="<?php echo $data['f4_link_url1']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f4_link_title2">Link Title 2</label>
+              <input name="f4_link_title2" class="input" type="text" id="f4_link_title2" placeholder="Link Title 2" required value="<?php echo $data['f4_link_title2']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f4_link_url2">Link Url 2</label>
+              <input name="f4_link_url2" class="input" type="text" id="f4_link_url2" placeholder="Link Url 2" required value="<?php echo $data['f4_link_url2']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f4_link_title3">Link Title 3</label>
+              <input name="f4_link_title3" class="input" type="text" id="f4_link_title3" placeholder="Link Title 3" required value="<?php echo $data['f4_link_title3']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f4_link_url3">Link Url 3</label>
+              <input name="f4_link_url3" class="input" type="text" id="f4_link_url3" placeholder="Link Url 3" required value="<?php echo $data['f4_link_url3']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f4_link_title4">Link Title 4</label>
+              <input name="f4_link_title4" class="input" type="text" id="f4_link_title4" placeholder="Link Title 4" required value="<?php echo $data['f4_link_title2']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="f4_link_url4">Link Url 4</label>
+              <input name="f4_link_url4" class="input" type="text" id="f4_link_url4" placeholder="Link Url 4" required value="<?php echo $data['f4_link_url2']?>">
             </div>
 
             <div class="col-span-2 flex justify-start">
@@ -228,43 +229,43 @@
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="fm_link_title1">Link Title 1</label>
+              <input name="fm_link_title1" class="input" type="text" id="fm_link_title1" placeholder="Link Title 1" required value="<?php echo $data['fm_link_title1']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="fm_link_url1">Link Url 1</label>
+              <input name="fm_link_url1" class="input" type="text" id="fm_link_url1" placeholder="Link Url 1" required value="<?php echo $data['fm_link_url1']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="fm_link_title2">Link Title 2</label>
+              <input name="fm_link_title2" class="input" type="text" id="fm_link_title2" placeholder="Link Title 2" required value="<?php echo $data['fm_link_title2']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="fm_link_url2">Link Url 2</label>
+              <input name="fm_link_url2" class="input" type="text" id="fm_link_url2" placeholder="Link Url 2" required value="<?php echo $data['fm_link_url2']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="fm_link_title3">Link Title 3</label>
+              <input name="fm_link_title3" class="input" type="text" id="fm_link_title3" placeholder="Link Title 3" required value="<?php echo $data['fm_link_title3']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="fm_link_url3">Link Url 3</label>
+              <input name="fm_link_url3" class="input" type="text" id="fm_link_url3" placeholder="Link Url 3" required value="<?php echo $data['fm_link_url3']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="fm_link_title4">Link Title 4</label>
+              <input name="fm_link_title4" class="input" type="text" id="fm_link_title4" placeholder="Link Title 4" required value="<?php echo $data['f4_link_title2']?>">
             </div>
 
             <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+              <label for="fm_link_url4">Link Url 4</label>
+              <input name="fm_link_url4" class="input" type="text" id="fm_link_url4" placeholder="Link Url 4" required value="<?php echo $data['f4_link_url2']?>">
             </div>
 
             <div class="col-span-2 flex justify-start">
