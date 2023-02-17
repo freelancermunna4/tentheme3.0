@@ -132,12 +132,12 @@ $cr_url = substr($cr_url,strrpos($cr_url,'/')+1);
         <?php if($header_social_link == 'checked'){ ?>
           <div class="flex space-x-5">
             <a target="_blank" href="<?php echo $website['facebook']?>"
-            class="bg-blue-600 text-white px-4 py-1 rounded shadow-sm">
+            class="bg-blue-600 text-white px-3 py-1 rounded shadow-sm">
             <i class="fa-brands fa-facebook-f"></i>
             <small></small>
           </a>
           <a target="_blank" href="<?php echo $website['youtube']?>"
-          class="bg-red-600 text-white px-4 py-1 rounded shadow-sm">
+          class="bg-red-600 text-white px-2 py-1 rounded shadow-sm">
           <i class="fa-brands fa-youtube"></i>
           <small></small>
         </a>

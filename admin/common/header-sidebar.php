@@ -156,6 +156,18 @@
               <span>All Users</span>
             </a>
           </li>
+          <li>
+            <a href="./users.php">
+              <h4> <i class="fa-solid fa-briefcase"></i> </h4>
+              <span>Reseler</span>
+            </a>
+          </li>
+          <li>
+            <a href="./users.php">
+              <h4> <i class="fa-solid fa-briefcase"></i> </h4>
+              <span>Investor</span>
+            </a>
+          </li>
         </ul>
       </div>
       <hr class="my-0">

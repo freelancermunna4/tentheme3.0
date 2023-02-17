@@ -2,48 +2,14 @@
       
         <?php
         $data = _fetch("website","id=1");
-
-        if(isset($_POST['submit'])){
-            $footer_text = $_POST['footer_text'];
-            $update = _update("website","footer_text='$footer_text'","id=1");
-
-            if($update){
-              $msg = "Update Successfully";
-              header("location:footer-settings.php?msg=$msg");
-            }else{
-              echo $err = "Something is wrong";
-            }
-        }
-        
-        
-        
-        
         ?>
         <div class="w-full space-y-10 p-6 lg:p-12 bg-white border border-gray-200 rounded">
-          <form action="" method="POST" class="grid grid-cols-2 gap-y-6 gap-x-12">
+
+
             <div class="col-span-2">
-              <h2 class="text-xl font-semibold text-cyan-800">Footer Setting</h2>
+              <h2 class="text-xl font-semibold text-cyan-800">Footer 1</h2>
             </div>
-
-            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
-              <label for="footer_text">Footer Text</label>
-              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
-            </div>
-
-            <div class="col-span-2 flex justify-start">
-              <div class="w-fit">
-                <button type="submit" name="submit" class="button">Save</button>
-              </div>
-            </div>
-
-          </form>
-<br>
-<br>
-          <hr>
-
-          <div style="display:flex;justify-content:space-around">
-
-
+            <div style="display:flex;justify-content:space-around">
               <?php 
               if(isset($_POST['add_logo'])){
                 $file_name = $_FILES['file']['name'];
@@ -89,10 +55,265 @@
                 </form>
               </div>
 
+            <form action="" method="POST" class="grid grid-cols-2 gap-y-6 gap-x-12">
 
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
 
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 flex justify-start">
+              <div class="w-fit">
+                <button type="submit" name="submit" class="button">Save</button>
+              </div>
+            </div>
+          </form>
 
         </div>
+
+            
+
+<hr>
+          <form action="" method="POST" class="">
+            <div class="col-span-2">
+              <h2 class="text-xl font-semibold text-cyan-800">Footer 2</h2>
+            </div>
+
+            <div style="padding:50px 10px">
+              <label for="footer_text">Footer Text</label>
+              <textarea style="padding:10px;border:2px solid gray;width:100%;height:200px;border-radius:5px;" name="" class="textarea" id=""></textarea>
+            </div>
+
+            <div class="col-span-2 flex justify-start">
+              <div class="w-fit">
+                <button type="submit" name="submit" class="button">Save</button>
+              </div>
+            </div>
+          </form>
+
+
+
+<hr>
+          <form action="" method="POST" class="grid grid-cols-2 gap-y-6 gap-x-12">
+            <div class="col-span-2">
+              <h2 class="text-xl font-semibold text-cyan-800">Footer 3</h2>
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 flex justify-start">
+              <div class="w-fit">
+                <button type="submit" name="submit" class="button">Save</button>
+              </div>
+            </div>
+          </form>
+
+          
+
+
+
+<hr>
+          <form action="" method="POST" class="grid grid-cols-2 gap-y-6 gap-x-12">
+            <div class="col-span-2">
+              <h2 class="text-xl font-semibold text-cyan-800">Footer 4</h2>
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 flex justify-start">
+              <div class="w-fit">
+                <button type="submit" name="submit" class="button">Save</button>
+              </div>
+            </div>
+          </form>
+          
+
+
+
+<hr>
+          <form action="" method="POST" class="grid grid-cols-2 gap-y-6 gap-x-12">
+            <div class="col-span-2">
+              <h2 class="text-xl font-semibold text-cyan-800">Footer Menu</h2>
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 flex flex-col gap-y-1">
+              <label for="footer_text">Footer Text</label>
+              <input name="footer_text" class="input" type="text" id="footer_text" placeholder="Footer Text" required value="<?php echo $data['footer_text']?>">
+            </div>
+
+            <div class="col-span-2 flex justify-start">
+              <div class="w-fit">
+                <button type="submit" name="submit" class="button">Save</button>
+              </div>
+            </div>
+          </form>
+
+
+          
+<hr>
+<?php
+        $data = _fetch("website","id=1");
+
+        if(isset($_POST['submit'])){
+            $footer_text = $_POST['footer_text'];
+            $update = _update("website","footer_text='$footer_text'","id=1");
+
+            if($update){
+              $msg = "Update Successfully";
+              header("location:footer-settings.php?msg=$msg");
+            }else{
+              echo $err = "Something is wrong";
+            }
+        }
+        ?>
+          <form action="" method="POST" class="">
+            <div class="col-span-2">
+              <h2 class="text-xl font-semibold text-cyan-800">Copy Right Text</h2>
+            </div>
+
+            <div style="padding:50px 10px">
+              <label for="footer_text">Footer Text</label>
+              <textarea style="padding:10px;border:2px solid gray;width:100%;height:200px;border-radius:5px;" name="" class="textarea" id=""></textarea>
+            </div>
+
+            <div class="col-span-2 flex justify-start">
+              <div class="w-fit">
+                <button type="submit" name="submit" class="button">Save</button>
+              </div>
+            </div>
+          </form>
+
+          
+
+
+
+
       </div>
     </div>
   </main>
